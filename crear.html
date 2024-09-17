@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Código</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <a href="tu_link_aqui" class="boton-regresar" style="text-decoration: none;">
+        <button style="padding: 10px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+            Regresar
+        </button>
+    </a>
+
+    <h1>Generar Código</h1>
+    <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+    <button onclick="generarCodigo()">Generar Código</button>
+    <p id="codigoGenerado"></p>
+    <div class="contenedor-copiar">
+        <button id="botonCopiar" onclick="copiarCodigo()">Copiar Código</button>
+    </div>
+
+    <h2>Canjear Código</h2>
+    <input type="text" id="codigoCanje" placeholder="Ingresa el código a canjear" />
+    <button onclick="canjearCodigo()">Canjear</button>
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.0/firebase-database.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
